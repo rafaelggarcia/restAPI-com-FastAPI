@@ -73,7 +73,7 @@ async def ranking(competicao: str):
                                       FROM resultados_competicoes
                                       WHERE competicao = ?""", (competicao,) )
     else:
-        dados = conn.execute( """SELECT atleta,                                
+        dados = conn.execute("""SELECT atleta,                                
                                                    RANK() OVER (ORDER BY value DESC) AS posicao_ranking,
                                                    value
                                               FROM resultados_competicoes
