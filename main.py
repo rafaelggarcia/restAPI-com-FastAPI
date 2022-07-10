@@ -3,11 +3,13 @@ import sqlite3
 from pydantic import BaseModel
 from typing import Union
 
+
 class Competicao(BaseModel):
     competicao: str
     atleta: str
     value: Union[float, list]
     unidade: str
+
 
 app = FastAPI()
 
@@ -16,7 +18,7 @@ conn = db.cursor()
 
 @app.get("/")
 async def root():
-    return {"message": "Exemplo de API com FastAPI"}
+    return {"message": "Teste prático de API!"}
 
 
 @app.post("/criar_competicao" )
@@ -100,3 +102,5 @@ async def fechar_competicao(nome_competicao: str):
         db.commit()
         return {"message": "Competição finalizada com sucesso!"}
     return {"message": "Essa competição ainda não foi aberta! Caso queira abrir uma nova competição utilize a rota /criar_competicao"}
+
+
