@@ -1,4 +1,4 @@
-# Teste prático estante virtual. 
+# Teste prático. 
 
 **Instruções para executar a API: **
 
