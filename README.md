@@ -43,7 +43,7 @@
 * Para iniciar uma nova competição que já foi encerrada como "dardo" ou "corrida100m" é necessário executar o arquivo *delete.py* para a base de dados seja limpa. 
 * Em nenhum momento devem ser inseridos 2 atletas com o mesmo nome, isso causará duplicidade no ranking.
 
-Quaisquer demais dúvidas podem ser tiradas comigo através do e-mail *rafael.garcia@luizalabs.com.br*.
+Quaisquer demais dúvidas podem ser tiradas comigo através do e-mail *rafael_ggarcia@outlook.com*.
 
 Atenciosamente,
 
